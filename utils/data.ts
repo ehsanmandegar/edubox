@@ -1,4 +1,6 @@
-import lessonsData from '../data/lessons.json';
+// Use require to avoid requiring resolveJsonModule in TS config during EAS bundle
+// eslint-disable-next-line @typescript-eslint/no-var-requires
+const lessonsData = require('../data/lessons.json');
 import { Platform } from 'react-native';
 
 export type MediaType = 'text' | 'image' | 'audio' | 'video';
@@ -6,7 +8,7 @@ export type LessonContent = { type: MediaType; value: string };
 export type Lesson = { id: string; title: string; order: number; content: LessonContent[] };
 export type Course = { courseId: string; title: string; lessons: Lesson[] };
 
-export const course: Course = lessonsData as unknown as Course;
+export const course: Course = lessonsData as Course;
 
 export function getLessonById(id: string): Lesson | undefined {
   return course.lessons.find(l => l.id === id);
