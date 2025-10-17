@@ -8,7 +8,6 @@ export default function Home() {
       source={require('../assets/splash-icon.png')}
       style={{ flex: 1, justifyContent: 'flex-end' }}
       imageStyle={{ opacity: 0.2 }}
-    {
     >
       <BlurView intensity={40} tint="dark" style={{ margin: 24, borderRadius: 16, overflow: 'hidden' }}>
         <View style={{ padding: 20 }}>
