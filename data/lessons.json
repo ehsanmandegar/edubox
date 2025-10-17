@@ -1,0 +1,17 @@
+{
+  "courseId": "rn-learning",
+  "title": "آموزش ریکت نیتیو",
+  "lessons": [
+    {
+      "id": "1",
+      "title": "مقدمه",
+      "order": 1,
+      "content": [
+        { "type": "text", "value": "به دوره خوش آمدید." },
+        { "type": "image", "value": "assets/icon.png" }
+      ]
+    }
+  ]
+}
+
+
